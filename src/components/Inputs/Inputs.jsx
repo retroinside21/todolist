@@ -4,7 +4,6 @@ import { createUsers } from "../../redux/actions"
 
 const SearchInputs = ({ createUsers, term, handlerSearch }) => {
     const [title, setTitle] = useState('')
-    console.log(createUsers)
     const createUser = (title) => {
         return {
             userId: 20,

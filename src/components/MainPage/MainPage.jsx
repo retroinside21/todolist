@@ -15,6 +15,7 @@ const MainPage = () => {
                     <li className='main__item'>Изменение состояния выполненных задач</li>
                     <li className='main__item'>Удаление элемента</li>
                     <li className='main__item'>Поиск элемента</li>
+                    <li className='main__item'>Данные для списка должны быть запрошены с https://jsonplaceholder.typicode.com/todos</li>
                 </ul>
                 <div className='main__subtitle'>
                     Использованные технологии :

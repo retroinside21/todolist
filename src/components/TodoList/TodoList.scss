@@ -1,6 +1,7 @@
 .todolist {
     margin: 20px auto;
     width: 700px;
+
     &__inputbox {
         margin-top: 20px;
         display: flex;
@@ -36,39 +37,48 @@
     width: 700px;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0px 2px 5px 2px #c1c5db;
 
     &__link {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        padding: 7px;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 10px;
+    }
+
+    &__btns{
+        display: flex;
     }
 
     &__btn {
         margin-left: 2px;
-        padding: 6px 12px;
+        padding: 6px 10px;
         background-color: transparent;
         border: 1px solid rgb(179, 179, 179);
         border-radius: 5px;
         color: rgb(78, 78, 78);
-        font-weight: 400;
         cursor: pointer;
-
         &:nth-child(1) {
             margin-right: 5px;
             color: black;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 4px 14px;
+            font-weight: 900;
+            font-size: 27px;
+            padding: 4px 17px;
             transition: ease 0.3s;
         }
 
-        &:hover {
+        &:hover{
             background-color: #9fa8da;
             color: white;
             border: 1px solid white;
+             path {
+                fill: rgb(255, 255, 255)
+            }
         }
+
+       
     }
 
     &__title {
@@ -76,12 +86,25 @@
         color: #525a86;
         margin-bottom: 5px;
     }
+
     &__text {
-        font-size: 14px;
+        font-size: 16px;
         color: #777777;
-        & span{
+
+        & span {
             font-weight: 700;
         }
+    }
+
+    &__desc {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__img {
+        width: 60px;
+        border-radius: 50%;
     }
 }
 
