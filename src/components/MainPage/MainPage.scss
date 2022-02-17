@@ -1,0 +1,29 @@
+.main{
+    margin: 20px auto;
+    width: 1000px;
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    &__item{
+        padding: 5px 0px 5px 30px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(45deg, rgb(60, 87, 167), rgb(28, 13, 90));
+            position: absolute;
+            top: 9px;
+            left: 10px;
+        }
+    }
+    &__list{
+        margin-bottom: 20px;
+    }
+}
