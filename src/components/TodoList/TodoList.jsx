@@ -3,13 +3,13 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { connect } from 'react-redux'
 import { createUsers, fetchedUsers } from '../../redux/actions'
-import { Inputs } from '../Inputs/Inputs'
+import  SearchInputs  from '../Inputs/Inputs'
 import { Loading } from '../Loading/Loading'
 import { Pagination } from '../Pagination/Pagination'
 import './TodoList.scss'
 import { Users } from './Users'
 
-const TodoList = ({ createUsers }) => {
+const TodoList = () => {
 
     const users = useSelector(state => state.users.users)
     const loading = useSelector(state => state.app.loading)
@@ -47,10 +47,9 @@ const TodoList = ({ createUsers }) => {
         <div>
             <div className='todolist'>
                 <div className="todolist__box">
-                    <Inputs 
+                    <SearchInputs
                         term={term} 
                         handlerSearch={handlerSearch}
-                        createUsers={createUsers}
                     />
                     {contentVeiw }
                     <Pagination

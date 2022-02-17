@@ -1,7 +1,10 @@
 import { useState } from "react"
+import { connect } from "react-redux"
+import { createUsers } from "../../redux/actions"
 
- export const Inputs = ({ createUsers, term, handlerSearch }) => {
+const SearchInputs = ({ createUsers, term, handlerSearch }) => {
     const [title, setTitle] = useState('')
+    console.log(createUsers)
     const createUser = (title) => {
         return {
             userId: 20,
@@ -37,5 +40,7 @@ import { useState } from "react"
                 type="text" />
         </div>)
 }
+
+export default connect(null,{createUsers})(SearchInputs)
 
 
